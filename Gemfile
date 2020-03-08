@@ -5,11 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+ruby '2.3.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.7'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3', '< 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -57,3 +56,12 @@ gem 'simple_form'
 
 gem 'redis'
 
+group :development do
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3', '< 1.4'
+end
+
+group :production do
+  gem 'pg', '0.17.1'
+  gem 'rails_12factor'
+end
