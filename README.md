@@ -16,4 +16,4 @@ Instruções:
 
 * Executar 'rails server' (caso necessário fazer um 'rake db:migrate').
 
-* ...
+* http://localhost:3000
