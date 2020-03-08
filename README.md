@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hospedado no Heroku: https://blooming-brushlands-44993.herokuapp.com/
 
-Things you may want to cover:
+* Ruby '2.3.3'
 
-* Ruby version
+* Windows 10
 
-* System dependencies
+Instruções:
 
-* Configuration
+* Instalar Redis e Nodejs.
 
-* Database creation
+* No bash ir para o diretório da aplicação.
 
-* Database initialization
+* Executar um 'bundle install'.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
+* Executar 'rails server' (caso necessário fazer um 'rake db:migrate').
 
 * ...
